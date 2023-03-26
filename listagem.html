@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão HTML, CSS e JS</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script-2.js"></script>
 </head>
 <body>
 
@@ -22,13 +22,24 @@
 
         <main>
             <div class="conteudo">
-                <input class="AlinhamentoBotoes" placeholder="Título" id="titulo" type="text">
-                <br>
-                <input class="AlinhamentoBotoes" placeholder="Descrição" id="descricao" type="text">
-                <br>
-                <div id="cadastro" class="AlinhamentoBotoes cadastro">Cadastrar</div>
-                <br>
-                <div id="retorno" class="AlinhamentoBotoes retorno"></div>
+                <div id="buscarLivro" class="cadastro">Mostrar Livros</div>
+                <div id="retornoApi">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tbody" >
+                    
+                        </tbody>
+
+                        
+                    </table>
+
+                </div>
             
             </div> 
 
