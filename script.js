@@ -35,9 +35,6 @@ function cadastrarLivro (){
                 
                 const response = await fetch (url, fetchOptions)
                 constrespondeData = await response.json
-
-                console.log(constrespondeData)
-
             }
 
             document.getElementById("retorno").innerHTML = "Enviado com sucesso!"
