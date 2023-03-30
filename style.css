@@ -86,7 +86,7 @@ main{
 }
 
 #retornoApi{
-    border: solid red 2px;
+    background-color: white;
     margin-top:10px ;
     display: block;
     height: 500px;

@@ -13,8 +13,12 @@ function mostrarLivro ()
             const url = `https://target-api-simples.cyclic.app/livros`
 
             const response = await fetch(url)
-            const responseData = await response.json()
-            return responseData
+            const livros = await response.json()
+            console.log(livros)
+
+            console.log(livros[0].id)
+            console.log(livros[0].title)
+            console.log(livros[0].description)
 
 
         }

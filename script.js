@@ -9,11 +9,18 @@ function cadastrarLivro (){
         let validacaoCadastro = document.getElementById("titulo").value
         let validacaoDescricao = document.getElementById("descricao").value
 
-        if (validacaoCadastro === "" && validacaoDescricao === "")
+        if (validacaoCadastro === "" || validacaoDescricao === "")
         {
             document.getElementById("retorno").innerHTML = "Fomulário inválido"
             document.getElementById('retorno').style.backgroundColor= "#AC6363"
             document.getElementById('retorno').style.display="inline-block"
+
+            document.getElementById("titulo").addEventListener("click", () => {
+                document.getElementById("retorno").style.display = "none"
+            })
+            document.getElementById("descricao").addEventListener("click", () => {
+                document.getElementById("retorno").style.display = "none"
+            })
         }
         else
         {
